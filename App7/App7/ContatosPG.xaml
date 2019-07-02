@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="App7.ContatosPG">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Lista com as pessoas. "/>
+            <Picker x:Name="Pessoas" HorizontalOptions="FillAndExpand" Title="Pessoas">
+                <Picker.Items>
+                    <x:String></x:String>
+                    <x:String></x:String>
+                </Picker.Items>
+            </Picker>
+            <Label Text="Lista com os contatos da pessoa selecioanda."/>
+            <Picker x:Name="contatslc" HorizontalOptions="FillAndExpand" Title="Contatos">
+                <Picker.Items>
+                    <x:String></x:String>
+                    <x:String></x:String>
+                </Picker.Items>
+            </Picker>
+            <Button Text="Associar familia" 
+                Clicked="ASCFamilia" 
+                HorizontalOptions="Center"/>
+            <Button Text="Associar Endereço" 
+                Clicked="ASCednereco" 
+                HorizontalOptions="Center"/>
+            <Button Text="Associar internet" 
+                Clicked="ASCInternet" 
+                HorizontalOptions="Center"/>
+            <Button Text="Associar telefone" 
+                Clicked="AscTelefone" 
+                HorizontalOptions="Center"/>
+            <Button Text="Excluir Contato" 
+                Clicked="ExcContato" 
+                HorizontalOptions="Center"/>
+            <Button Text="Excluir pessoa" 
+                Clicked="EXcPessoa" 
+                HorizontalOptions="Center"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
